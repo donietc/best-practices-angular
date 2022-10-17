@@ -1,0 +1,44 @@
+.main-container {
+    height: 100vh;
+    position: absolute;
+    background-color: pink;
+  }
+
+  .sidenav-header {
+    padding-top: 25px;
+    width: 300px;
+    background-color: rgb(61, 1, 61) !important;
+  color: white;
+    box-shadow: none;
+  }
+
+  .accordion {
+    padding: 0;
+    width: 100%;
+    max-width: 360px;
+    margin: auto;
+    border-radius: 4px;
+  
+    .menu {
+      border-left: 5px solid transparent;
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding: 15px 0px;
+      color: white;
+      font-weight: 400;
+      cursor: pointer;
+      transition: all 0.4s ease;
+    }
+  
+    li.active mat-icon#menu-icon {
+      transform: rotate(90deg);
+    }
+
+    .active{
+        color:rgb(235, 157, 183);
+    }
+  }
+  ul#accordion {
+    margin-top: 30px;
+  }

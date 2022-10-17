@@ -1,0 +1,19 @@
+<mat-sidenav-container class="main-container">
+  <mat-sidenav #sidenav mode="side" [(opened)]="opened" class="sidenav-header">
+    <ul id="accordion" class="accordion">
+        <li  routerLinkActive="active"[routerLink]="'/dashboard'"> Dashboard</li>
+        <li  routerLinkActive="active" [routerLink]="'/product'">Product</li>
+        <li  routerLinkActive="active" [routerLink]="'/user'">User</li>
+    </ul>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <p>
+      <button mat-button color="primary" (click)="sidenav.toggle(); opened = !opened">
+        sidenav.toggle()
+      </button>
+    </p>
+
+   
+  </mat-sidenav-content>
+</mat-sidenav-container>
